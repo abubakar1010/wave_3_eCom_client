@@ -1,9 +1,17 @@
 import { Outlet } from "react-router-dom";
+import Footer from "../components/Shared/Footer";
+import NavBar from "../components/Shared/Navbar";
 
-const Root = () => {
+
+const Root = () => {    
+
     return (
         <div>
-            <Outlet />
+            <NavBar />
+            <div className=" min-h-screen mt-4 mb-24">
+            <Outlet/>
+            </div>
+            <Footer />
         </div>
     );
 };
